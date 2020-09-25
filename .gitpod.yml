@@ -6,7 +6,7 @@ ports:
       onOpen: open-preview
 tasks:
     - command: >
-        python
+        cd "/workspace/Python/Intro to Python/Starter"
 github:
     prebuilds:
         # enable for the master/default branch (defaults to true)
