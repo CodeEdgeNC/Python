@@ -19,6 +19,7 @@ import pygame
 import time
 import os
 import shelve
+import tkinter
 import tkinter.messagebox
 
 
