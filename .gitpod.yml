@@ -10,7 +10,7 @@ ports:
       onOpen: open-preview
 tasks:
     - init: pip3 install -r requirements.txt
-      command: 
+      command: python3 Intro\ to\ Python/Solution/snakeGameSolution.py 
 github:
     prebuilds:
         # enable for the master/default branch (defaults to true)
