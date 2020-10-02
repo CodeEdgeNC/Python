@@ -19,7 +19,8 @@ import pygame
 import time
 import os
 import shelve
-import tkinter.messagebox
+#import tkinter
+#import tkinter.messagebox
 
 
 # The Apple Class
@@ -194,22 +195,22 @@ class App:
                     highScoreFile['score'] = self.snake.length
 
                 # Show Message Box to indicate that the game is over
-                root = tkinter.Tk()     # get access to root tk window
-                root.withdraw()         # do not display extra root tk window
+                #root = tkinter.Tk()     # get access to root tk window
+                #root.withdraw()         # do not display extra root tk window
                 # tkinter.messagebox.showinfo('Game Over!',
                 # highscoretext + '\r\r')
-
-                answer = tkinter.messagebox.askyesno(
-                    "Game Over", highscoretext + '\r\r' + "Do you want to reset the highscore?", )
-                if answer == False:
-                    highScoreFile.close()
-                    exit(0)
-                else:
-                    # Save new high score
-                    highScoreFile['score'] = 0
-                    highScoreFile.close()
-                    self.snake.length = 3
-                    exit(0)
+#
+ #               answer = tkinter.messagebox.askyesno(
+  #                  "Game Over", highscoretext + '\r\r' + "Do you want to reset the highscore?", )
+   #             if answer == False:
+    #                highScoreFile.close()
+     #               exit(0)
+      #          else:
+       #             # Save new high score
+        #            highScoreFile['score'] = 0
+         #           highScoreFile.close()
+          #          self.snake.length = 3
+           #         exit(0)
 
         pass
 
