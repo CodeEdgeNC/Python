@@ -9,8 +9,8 @@ ports:
     - port: 6080
       onOpen: open-preview
 tasks:
-    - init: pip3 install -r ./01-SnakeGame/requirements.txt
-      command: python3 ./01-SnakeGame/snakeGameSolution.py 
+    - init: pip3 install -r ./01-Snake-Game/requirements.txt
+      command: python3 ./01-Snake-Game/snakeGameSolution.py 
 github:
     prebuilds:
         # enable for the master/default branch (defaults to true)
