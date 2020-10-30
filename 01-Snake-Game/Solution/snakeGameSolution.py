@@ -154,8 +154,8 @@ class App:
         self._running = True
 
         # Load the snake and apple images
-        self._image_surf = pygame.image.load("./01-Snake-Game/redblock.jpg").convert()
-        self._apple_surf = pygame.image.load("./01-Snake-Game/greenblock.jpg").convert()
+        self._image_surf = pygame.image.load("./01-Snake-Game/Solution/redblock.jpg").convert()
+        self._apple_surf = pygame.image.load("./01-Snake-Game/Solution/greenblock.jpg").convert()
 
     def on_event(self, event):
         if event.type == QUIT:
